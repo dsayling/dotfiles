@@ -1,0 +1,46 @@
+[ui]
+
+[extensions]
+histedit = 
+pager =
+fetch =
+eol =
+purge =
+mq = 
+graphlog =
+rebase =
+transplant =
+mercurial_keyring =
+color = 
+churn =
+shelve =
+
+[pager]
+pager = LESS='FSRX --tabs=4' less
+attend = log,glog,diff
+auto =
+
+[patch]
+fuzz = 20
+
+[diff]
+git = true
+
+[hooks]
+#pre-push = python:/Users/Drew/Workspace/Automation/master/autoplatform/scripts/gatekeeper.py:pre_push_hook
+#pretxncommit = python:/Users/Drew/Workspace/Automation/master/autoplatform/scripts/gatekeeper.py:commit_hook
+
+[alias]
+books = bookmarks
+book = bookmarks
+blame = blame -ulnq
+
+[merge-tools]
+#kdiff3.executable = /usr/local/bin/kdiff3
+#diff3.args = $base $local $other -o $output
+
+[color]
+status.modified = white bold
+
+[subrepos]
+git:allowed = true
